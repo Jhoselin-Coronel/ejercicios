@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formulario select</title>
+</head>
+<body>
+    <h1>Selecciona tu fruta favorita</h1>
+    <p>Elige la fruta que más te gusta:</p>
+    <form onsubmit="showFruit(event)">
+        <select id="fruitSelect">
+            <option value="manzana">Manzana</option>
+            <option value="platano">Plátano</option>
+            <option value="naranja">Naranja</option>
+            <option value="uva">Uva</option>
+            <option value="fresa">Fresa</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="fruitOutput"></p>
+
+    <script>
+        function showFruit(event) {
+            event.preventDefault(); // Previene el envío del formulario
+            var fruitSelect = document.getElementById("fruitSelect");
+            var fruitOutput = document.getElementById("fruitOutput");
+        }
+    </script>
+</body>
+</html>

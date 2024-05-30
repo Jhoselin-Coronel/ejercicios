@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de input</title>
+</head>
+<body>
+  <h1>Ingresa tu nombre</h1>
+  <p>Por favor, escribe tu nombre en el campo de abajo:</p>
+  <form onsubmit="showName(event)">
+    <input type="text" id="nameInput" placeholder="Tu nombre" required>
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="nameOutput"></p>
+
+  <script>
+    function showName(event) {
+      event.preventDefault(); // Previene el envío del formulario
+      var nameInput = document.getElementById("nameInput");
+      var nameOutput = document.getElementById("nameOutput");
+      nameOutput.textContent = "¡Hola, " + nameInput.value + "!";
+    }
+  </script>
+</body>
+</html>

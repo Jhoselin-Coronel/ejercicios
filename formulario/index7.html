@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ejemplo de output</title>
+    </head>
+<body>
+
+<h2>Conversión de Unidades</h2>
+<p>Esta herramienta permite convertir entre diferentes unidades de medida.</p>
+
+<form oninput="result.value=input.value*conversionFactor.value">
+  Valor:
+  <input type="number" id="input" name="input" value="10">
+  <select id="conversionFactor" name="conversionFactor">
+    <option value="1">Metros</option>
+    <option value="0.3048">Pies</option>
+    <option value="0.9144">Yardas</option>
+    <option value="1609.34">Millas</option>
+  </select>
+  =
+  <output name="result" for="input conversionFactor"></output>
+  <br><br>
+  <input type="submit" value="Convertir">
+</form>
+
+</body>
+</html>
